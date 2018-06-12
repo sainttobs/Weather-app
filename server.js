@@ -9,5 +9,5 @@ app.get('/', function(req, res){
 	res.sendFile(__dirname + "/index.html");
 });
 app.listen(3000, function(){
-	console.log('My test app listening to port: 3000!');
+	console.log('My Web app listening to port: 3000!');
 });
