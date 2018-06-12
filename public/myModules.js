@@ -2,15 +2,6 @@ function myDateTime() {
     return Date();
 };
 
-function appendDiv() {
-	// body...
-	var task = $('#text').val();
-	$('#append').append("<li id='task'>" + task + "</li>");
-}
-$('#append').click(function(){
-	$("#task").remove();
-});
-
 "use strict";
 var geocoder;
 var map;
