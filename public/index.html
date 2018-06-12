@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> My Personal Website</title>
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
+</head>
+<body>
+	<p> My Name is Adeyefa Oluwatoba Adegoke. I am a Web Developer, Programmer and Blogger. This Site was built using Node.js</p>
+	<!--<form>
+		<link rel='script' href='myModules.js'>
+		<input type='text' id='text'>
+		<button type='button' id='submit' onclick="appendDiv()">Submit</button>
+	</form>-->
+	<h3 id='head'> My Personalized ToDoApp </h3>
+	<ul id='append'> </ul>
+	<div class="row">
+		<div class="col-md-2 col-sm-2 col-xs-2">
+			<button class="btn btn-primary btn-sm" id="get-weather-btn">Get Weather</button>
+		</div><!-- .col -->
+		<div class="col-md-10 col-sm-10 col-xs-10">
+			<div class="panel panel-default">
+				<div class="panel-heading">Weather &amp; Location Response</div>
+				<div class="panel-body">
+					<div id="details"> 
+						
+					</div>
+					<p>Enter Address: <input id="address" type="text" class="form-control"/></p>
+					<p>Lat/Long: <input id="location-lat-long" type="text" class="form-control"/></p>
+					<p>Weather: <textarea id="weather" class="form-control" rows="5" cols="100"></textarea></p>
+					<div id="map-canvas" style="min-height: 400px;"></div>
+				</div>
+			</div>
+		</div><!-- .col -->
+	</div><!-- .row -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGnNisaHcE-V5OsCUTIotstW7mYW-DKZI&callback=initialize"
+        async defer></script>
+	<script src="myModules.js"></script>
+</body>
+</html>

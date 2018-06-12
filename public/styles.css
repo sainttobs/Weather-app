@@ -1,0 +1,22 @@
+*{
+	font-family: 'Sunflower', sans-serif;
+}
+body{
+	background-color: #E9967A;**/
+    background-position: center;
+    background-attachment: fixed;
+}
+input [type ='text']{
+	font-family: 'Sunflower', sans-serif;
+}
+#head{
+	font-family: 'Sunflower', sans-serif;
+	color: red;
+}#image{
+	float: right;
+}
+#details{
+	float:right;
+	background-color: blue;
+}
+
