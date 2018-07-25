@@ -30,7 +30,7 @@ function codeAddress(address) {
 			latitude	= results[0].geometry.location.lat();
 			longitude	= results[0].geometry.location.lng();
 			
-			$("#location-lat-long").val("lat: "+latitude+" / longitude: "+longitude);	// write lat/long to input field
+			$("#location-lat-long").val("latitude: "+latitude+"  longitude: "+longitude);	// write lat/long to input field
 			getWeather(latitude,longitude);					// get weather for returned lat/long
 			map.setCenter(results[0].geometry.location);				// center the map on address
 			var marker = new google.maps.Marker({						// place a marker on the map at the address
@@ -48,7 +48,7 @@ function codeAddress(address) {
 function getWeather(latitude,longitude) {
 	if(latitude != '' && longitude != '') {
 		$("#weather").val("Retrieving weather...");										// write temporary response while we get the weather
-		$.getJSON( "http://api.openweathermap.org/data/2.5/weather?lat="+latitude+"&lon="+longitude+"&APPID=[Your-API-KEY]&units=metric", function(data) {	// add '&units=imperial' to get U.S. measurements
+		$.getJSON( "http://api.openweathermap.org/data/2.5/weather?lat="+latitude+"&lon="+longitude+"&APPID=6542ba721ab6c09627bc563f9015a1bd&units=metric", function(data) {	// add '&units=imperial' to get U.S. measurements
 			var currWeather					= new Array();								// create array to hold our weather response data
 			currWeather['currTemp']			= Math.round(data.main.temp);				// current temperature
 			currWeather['highTemp']			= Math.round(data.main.temp_max);			// today's high temp
