@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> My Personal Website</title>
+	<title> Simple Weather Web-App</title>
 	<link rel="stylesheet" href="styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Sunflower:300" rel="stylesheet">
 </head>
 <body>
-	<p> My Name is Adeyefa Oluwatoba Adegoke. I am a Web Developer, Programmer and Blogger. This Site was built using Node.js</p>
+	<p> My Name is Adeyefa Oluwatoba Adegoke. I am a Web Developer/Software Engineer. This is a simple web app for getting the current weather of any location. It was built with NodeJS and Express on the backend.</p>
+	<big>API's USED</big>
+	<ul>
+		<li>Google Map API</li>
+		<li>Open Weather Map API</li>
+	</ul>
 	<div class="row">
 		<div class="col-md-2 col-sm-2 col-xs-2">
 			<button class="btn btn-primary btn-sm" id="get-weather-btn">Get Weather</button>
@@ -27,7 +32,7 @@
 		</div><!-- .col -->
 	</div><!-- .row -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGnNisaHcE-V5OsCUTIotstW7mYW-DKZI&callback=initialize"
+	<script src="https://maps.googleapis.com/maps/api/js?key=<API-KEY>&callback=initialize"
         async defer></script>
 	<script src="myModules.js"></script>
 </body>
